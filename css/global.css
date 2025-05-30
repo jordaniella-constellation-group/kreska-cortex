@@ -1,0 +1,152 @@
+/*
+    Ato no apetraka ny style global an'ny application
+    couleur, font, layout, sns.
+*/
+
+:root {
+  /* 
+    Ato no manao définition ana variables CSS dia amzay 
+    afaka manova style an'ny application amin'ny 
+    toerana iray fotsiny 
+  */
+  --main-color: #f63f87; /* Couleur principale */
+  --secondary-color: #2ecc71; /* Couleur secondaire */
+  --text-color: #374957; /* Couleur du texte */
+  --bg-color: #ffffff; /* Couleur de fond */
+  --bg-secondary: rgba(255, 255, 255, 0.5);
+  --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark {
+  --text-color: #ffffff;
+  --bg-color: #1c274c;
+  --bg-secondary: #37495701;
+  --shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Raha tia hi-ajouter police manokana avy notelechargena tamin'ny net */
+@font-face {
+  /* izay anarana tiana no atao anatin'ilay font family
+      dia iny no antsoina avy eo any am element mila azy*/
+  font-family: "orbitron";
+  src: url("../fonts/Orbitron-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "lato", sans-serif; /* Mampiasa ny font Lato */
+  color: var(--text-color); /* Mampiasa ny couleur du texte */
+  overflow-x: hidden; /* Manakana ny overflow horizontal */
+  background: var(--bg-color);
+}
+header .nav,
+main {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+main {
+  min-height: 100vh; /* Manome minimum height hauteur an'ilay écran */
+  padding: 20px; /* Espacement interne */
+  width: 100vw; /* Manome width ny largeur an'ilay écran */
+}
+.section {
+  width: 100vw;
+  height: 100%;
+  padding-top: 60px;
+  padding-bottom: 15vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "orbitron";
+}
+.title {
+  font-size: clamp(3rem, 12vw, 9rem);
+}
+.subtitle {
+  font-size: clamp(2rem, 8vw, 6rem);
+}
+.paragraph {
+  max-width: 500px;
+}
+svg path {
+  fill: var(--text-color);
+}
+strong {
+  font-weight: 600;
+}
+
+.center-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mt-2 {
+  margin-top: 20px;
+}
+.mt-5 {
+  margin-top: 50px;
+}
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+.btn {
+  padding: 1rem 2rem; /* Espacement interne du bouton */
+  border: none; /* Pas de bordure */
+  border-radius: 10px; /* Coins arrondis */
+  cursor: pointer; /* Curseur en forme de main */
+  margin: 20px 0;
+}
+.btn-primary {
+  background-color: var(--main-color); /* Couleur principale */
+  color: white; /* Couleur du texte */
+}
+.hidden {
+  display: none; /* Cacher l'élément */
+}
+
+ul,
+li,
+a,
+p {
+  color: var(--text-color);
+}
+p,
+.btn {
+  font-size: 1.1rem;
+}
+.card-list {
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.card {
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 300px;
+  text-align: center;
+  width: 100%;
+}
+.card .card__title {
+  font-family: "orbitron";
+  color: var(--main-color);
+  margin-bottom: 30px;
+}

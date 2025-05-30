@@ -1,0 +1,15 @@
+/* Ato amreto fichier reto no apetraka ny norme mba
+ hiala ny comportement natif an'ny navigateur */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

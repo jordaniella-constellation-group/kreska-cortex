@@ -1,0 +1,50 @@
+[
+  {
+    "nom": "RAKOTONIRINA",
+    "prenom": "Aina Kreska",
+    "matricule": "IM_258",
+    "speciality": "Développement web (Front-end & UI/UX)",
+    "facebook": "Lorem, ipsum dolor.",
+    "phone": "+261 30 309 303 30",
+    "citation": "L’intelligence n’est pas dans les réponses, mais dans les bonnes questions.",
+    "technos": ["React", "Tailwind CSS", "Figma", "HTML", "CSS"],
+    "image": "images/aina/avatar.png",
+    "id": "0"
+  },
+  {
+    "nom": "RANDRIANASOAVINA",
+    "prenom": "Ismael",
+    "matricule": "IM_261",
+    "speciality": "Développement et Management",
+    "facebook": "Lorem, ipsum dolor.",
+    "phone": "+261 30 309 303 30",
+    "citation": "L’intelligence n’est pas dans les réponses, mais dans les bonnes questions.",
+    "technos": ["Info bureautique", "Infographie", "HTML", "CSS"],
+    "image": "images/ismael/avatar.png",
+    "id": "1"
+  },
+  {
+    "nom": "RASAMIARISOA",
+    "prenom": "Toky",
+    "matricule": "IM_261",
+    "speciality": "Développement et Management",
+    "facebook": "Lorem, ipsum dolor.",
+    "phone": "+261 30 309 303 30",
+    "citation": "L’intelligence n’est pas dans les réponses, mais dans les bonnes questions.",
+    "technos": ["HTML", "CSS"],
+    "image": "images/toky/avatar.png",
+    "id": "2"
+  },
+  {
+    "nom": "RAMANIRISAHAZA",
+    "prenom": "Vonona Nantsoina",
+    "matricule": "IM_261",
+    "speciality": "Développement et Management",
+    "facebook": "Lorem, ipsum dolor.",
+    "phone": "+261 30 309 303 30",
+    "citation": "L’intelligence n’est pas dans les réponses, mais dans les bonnes questions.",
+    "technos": ["HTML", "CSS"],
+    "image": "images/sahaza/avatar.png",
+    "id": "3"
+  }
+]

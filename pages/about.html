@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS ilain'ny app foana ireto -->
+    <link rel="stylesheet" href="../css/animation.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/navigation.css" />
+
+    <!-- CSS spécifique ho an'ny home page -->
+    <link rel="stylesheet" href="../css/pages/about.css" />
+    <title>Cortex | Home</title>
+
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body class="dark">
+    <header>
+      <nav class="nav d-flex justify-content-between align-items-center">
+        <div class="nav__logo">
+          <a href="../index.html">
+            <img src="../images/logo.png" alt="Cortex logo renard" />
+          </a>
+        </div>
+        <input
+          type="checkbox"
+          name="input__collapse"
+          id="input__collapse"
+          class="hidden"
+        />
+        <div class="nav__collapse">
+          <ul class="nav__menu">
+            <li class="nav__item">
+              <a href="../index.html" class="d-flex">
+                <svg
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8 0L0 6V8H1V15H4V10H7V15H15V8H16V6L14 4.5V1H11V2.25L8 0ZM9 10H12V13H9V10Z"
+                    fill="#000000"
+                  />
+                </svg>
+                <span>Accueil</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="./about.html" class="d-flex active">
+                <svg
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 512 512"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <title>about-filled</title>
+                  <g
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      fill="#000000"
+                      transform="translate(42.666667, 42.666667)"
+                    >
+                      <path
+                        d="M213.333333,0 C331.154987,0 426.666667,95.51168 426.666667,213.333333 C426.666667,331.153707 331.154987,426.666667 213.333333,426.666667 C95.51296,426.666667 0,331.153707 0,213.333333 C0,95.51168 95.51296,0 213.333333,0 Z M234.713387,192 L192.04672,192 L192.04672,320 L234.713387,320 L234.713387,192 Z M213.55008,101.333333 C197.99616,101.333333 186.713387,112.5536 186.713387,127.704107 C186.713387,143.46752 197.698773,154.666667 213.55008,154.666667 C228.785067,154.666667 240.04672,143.46752 240.04672,128 C240.04672,112.5536 228.785067,101.333333 213.55008,101.333333 Z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <span>A-propos</span>
+              </a>
+            </li>
+          </ul>
+          <div class="nav__logo">
+            <a href="../index.html">
+              <img src="../images/logo.png" alt="Cortex logo renard" />
+            </a>
+          </div>
+          <ul class="nav__menu">
+            <li class="nav__item">
+              <a href="./members.html" class="d-flex">
+                <svg
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 3.5C8 4.88071 6.88071 6 5.5 6C4.11929 6 3 4.88071 3 3.5C3 2.11929 4.11929 1 5.5 1C6.88071 1 8 2.11929 8 3.5Z"
+                    fill="#000000"
+                  />
+                  <path
+                    d="M3 8C1.34315 8 0 9.34315 0 11V15H8V8H3Z"
+                    fill="#000000"
+                  />
+                  <path
+                    d="M13 8H10V15H16V11C16 9.34315 14.6569 8 13 8Z"
+                    fill="#000000"
+                  />
+                  <path
+                    d="M12 6C13.1046 6 14 5.10457 14 4C14 2.89543 13.1046 2 12 2C10.8954 2 10 2.89543 10 4C10 5.10457 10.8954 6 12 6Z"
+                    fill="#000000"
+                  />
+                </svg>
+                <span>Membres</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="./contact.html" class="d-flex">
+                <svg
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 5V1H7V5L4.5 7.5L8.5 11.5L11 9H15V15H11C5.47715 15 1 10.5228 1 5Z"
+                    fill="#000000"
+                  />
+                </svg>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <label for="input__collapse" class="nav__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </nav>
+    </header>
+    <main class="center-block">
+      <section class="section about d-flex flex-column">
+        <div class="container d-flex justify-content-between">
+            <div class="container__text">
+                <h2>🎯 Notre mission</h2>
+                <p class="mt-2 paragraph">Chez Cortex, notre mission est simple:</p>
+                <p class="paragraph mt-2">
+                  progresser chaque jour dans l’univers infini de l’informatique.
+                </p>
+                <p class="paragraph mt-2">
+                  Qu’il s’agisse de développement web, d’intelligence artificielle, de
+                  cybersécurité ou de systèmes embarqués, nous nous engageons à
+                  apprendre ensemble, à repousser nos limites et à bâtir des projets
+                  concrets qui révèlent notre potentiel. </p>
+                  <p class="paragraph mt-2">Nous ne cherchons pas
+                  juste à “suivre les cours”. </p>
+                  <p class="paragraph mt-2"></p>Nous voulons maîtriser, inventer,
+                  connecter les savoirs.
+                </p>
+            </div>
+            <div class="container__image">
+                <img src="../images/aina/avatar.png" alt="">
+            </div>
+        </div>
+        <div class="container d-flex justify-content-between">
+            <div class="container__image">
+                <img src="../images/aina/avatar.png" alt="">
+            </div>
+            <div class="container__text">
+                <h2>📖 Notre histoire</h2>
+                <p class="mt-2 paragraph">Cortex est né de rencontres improbables… mais logiques.</p>
+                <p class="paragraph mt-2">
+                    Au détour d’un TP, d’un forum étudiant ou d’un bug résolu à 2h du matin, nous avons découvert un point commun : une passion profonde pour la <strong>tech</strong>, et une envie brûlante de <strong>grandir par la pratique.</strong>
+                </p>
+                <p class="paragraph mt-2">
+                    Petit à petit, les échanges sont devenus des projets.
+                    Puis une équipe.</p>
+                  <p class="paragraph mt-2"></p>Aujourd’hui, Cortex, c’est un noyau d’étudiants motivés, qui avancent ensemble, sans peur de l’erreur, avec une obsession :<strong>comprendre, créer, et évoluer.</strong>
+                </p></div>
+        </div>
+        <div class="container">
+            <h2>💡 Nos valeurs</h2>
+            <p class="paragraph mt-2">Nous croyons en une informatique vivante, humaine et collective.<br>
+                Cortex, c’est notre terrain d’expérimentation. Et demain ? Ce sera notre tremplin.</p>
+            <div class="d-flex mt-5 card-list">
+                <div class="card">
+                    <p class="card__title">Apprentissage constant </p>
+                    <p class="card__desc">Chaque ligne de code est un pas de plus vers la maîtrise.</p>
+                </div>
+                <div class="card">
+                    <p class="card__title">Entraide inconditionnelle</p>
+                    <p class="card__desc"> On monte ensemble, on apprend ensemble.</p>
+                </div>
+                <div class="card">
+                    <p class="card__title">Exploration audacieuse</p>
+                    <p class="card__desc"> On ose les idées folles. On teste. On construit. On recommence.</p>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <input type="checkbox" name="mode__btn" id="mode__btn" class="hidden" />
+      <label
+        for="mode__btn"
+        class="mode__toggler d-flex justify-content-between align-items-center"
+      >
+        <div class="left center-block">
+          <svg
+            width="800px"
+            height="800px"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M7 3V0H9V3H7Z" fill="#000000" />
+            <path d="M9 13V16H7V13H9Z" fill="#000000" />
+            <path
+              d="M11 8C11 9.65685 9.65685 11 8 11C6.34315 11 5 9.65685 5 8C5 6.34315 6.34315 5 8 5C9.65685 5 11 6.34315 11 8Z"
+              fill="#000000"
+            />
+            <path d="M0 9H3V7H0V9Z" fill="#000000" />
+            <path d="M16 7H13V9H16V7Z" fill="#000000" />
+            <path
+              d="M3.757 5.172 1.636 3.05 3.05 1.636 5.172 3.757 3.757 5.172Z"
+              fill="#000000"
+            />
+            <path
+              d="M12.243 10.828 14.364 12.95 12.95 14.364 10.828 12.243 12.243 10.828Z"
+              fill="#000000"
+            />
+            <path
+              d="M3.05 14.364 5.172 12.243 3.757 10.828 1.636 12.95 3.05 14.364Z"
+              fill="#000000"
+            />
+            <path
+              d="M12.95 1.636 10.828 3.757 12.243 5.172 14.364 3.05 12.95 1.636Z"
+              fill="#000000"
+            />
+          </svg>
+        </div>
+        <div class="right center-block">
+          <svg
+            width="800px"
+            height="800px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.9 2.307c-.161-.41-.739-.41-.9 0l-.43 1.095a.615.615 0 0 1-.272.274l-1.091.432c-.408.162-.408.742 0 .904l1.091.432a.615.615 0 0 1 .272.274l.43 1.095c.161.41.739.41.9 0l.43-1.095a.615.615 0 0 1 .272-.274l1.091-.432c.408-.162.408-.742 0-.904l-1.091-.432a.615.615 0 0 1-.272-.274L19.9 2.307Z"
+              fill="#1C274C"
+            />
+            <path
+              d="M16.033 8.13c-.161-.41-.739-.41-.9 0l-.157.4a.615.615 0 0 1-.272.274l-.398.158c-.408.162-.408.741 0 .903l.398.158c.124.05.223.149.272.274l.157.399c.161.41.739.41.9 0l.157-.399a.615.615 0 0 1 .272-.274l.398-.158c.408-.162.408-.741 0-.903l-.398-.158a.615.615 0 0 1-.272-.274l-.157-.4Z"
+              fill="#1C274C"
+            />
+            <path
+              d="M12 22c5.523 0 10-4.477 10-10 0-.463-.693-.54-.933-.144C19.929 13.741 17.861 15 15.5 15c-3.59 0-6.5-2.91-6.5-6.5 0-2.362 1.26-4.429 3.143-5.567C12.54 2.693 12.463 2 12 2 6.477 2 2 6.477 2 12s4.477 10 10 10Z"
+              fill="#1C274C"
+            />
+          </svg>
+        </div>
+      </label>
+      <p>&copy; Copyright Cortex group 2025</p>
+    </footer>
+  </body>
+</html>

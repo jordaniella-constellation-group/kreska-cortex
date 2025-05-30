@@ -1,0 +1,81 @@
+.mode__toggler {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6) inset;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  width: 100px;
+  height: 50px;
+  border-radius: 30px;
+  padding: 5px;
+}
+.mode__toggler::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: #1c274c;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6) inset;
+  z-index: -1;
+}
+.mode__toggler .left,
+.mode__toggler .right {
+  width: 50px;
+  height: 100%;
+  position: relative;
+}
+.mode__toggler .left::after,
+.mode__toggler .right::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.mode__toggler .right::after {
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.mode__toggler .left::after {
+  background-color: #ffffff;
+  transform: translateX(0);
+  opacity: 1;
+}
+.mode__toggler .left svg,
+.mode__toggler .right svg {
+  width: 21px;
+  height: 21px;
+}
+.mode__toggler .right svg {
+  opacity: 1;
+}
+.mode__toggler .left svg {
+  opacity: 1;
+}
+.mode__toggler .right svg path {
+  fill: #ffffff;
+}
+/* .mode__toggler .left */
+
+#mode__btn:checked ~ .mode__toggler::after {
+  opacity: 0;
+}
+#mode__btn:checked ~ .mode__toggler .right svg {
+  opacity: 0;
+}
+#mode__btn:checked ~ .mode__toggler .right::after {
+  transform: translateX(0);
+  opacity: 1;
+}
+#mode__btn:checked ~ .mode__toggler .left::after {
+  transform: translate(100%);
+  opacity: 0;
+}
+
+p {
+  text-align: center;
+}
