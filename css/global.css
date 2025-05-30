@@ -51,11 +51,12 @@ main {
   min-height: 100vh; /* Manome minimum height hauteur an'ilay écran */
   padding: 20px; /* Espacement interne */
   width: 100vw; /* Manome width ny largeur an'ilay écran */
+    position:relative;
+    top: 100px;
 }
 .section {
   width: 100vw;
   height: 100%;
-  padding-top: 60px;
   padding-bottom: 15vh;
 }
 
